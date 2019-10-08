@@ -78,6 +78,14 @@ def play_one_move(col, row, valid_directions):
         victory = is_victory(col, row)
     return victory, col, row
 
+def lever ()
+    lever_question = input ("Pull a lever (y/n): ")
+    if lever_question = "y" or if lever_question = "Y":
+        sum_coin += 1
+        print ("You received 1 coin, your total is now", sum_coin) 
+    else:
+        sum_coin = sum_coin 
+
 # The main program starts here
 victory = False
 row = 1
