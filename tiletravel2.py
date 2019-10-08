@@ -7,6 +7,10 @@ EAST = 'e'
 SOUTH = 's'
 WEST = 'w'
 
+sum_coin = 0
+
+
+
 def move(direction, col, row):
     ''' Returns updated col, row given the direction '''
     if direction == NORTH:
