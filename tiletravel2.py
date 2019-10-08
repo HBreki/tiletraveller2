@@ -7,17 +7,6 @@ EAST = 'e'
 SOUTH = 's'
 WEST = 'w'
 
-sum_coin = 0
-
-
-
-
-#Constants
-NORTH = 'n'
-EAST = 'e'
-SOUTH = 's'
-WEST = 'w'
-
 def move(direction, col, row):
     ''' Returns updated col, row given the direction '''
     if direction == NORTH:
@@ -112,3 +101,4 @@ while not victory:
     else:
         valid_directions, total = find_directions(total, col, row)
         print_directions(valid_directions)
+
