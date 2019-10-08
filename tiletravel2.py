@@ -96,13 +96,12 @@ def play():
             victory, col, row = play_one_move(col, row, valid_directions)
             if victory:
                 print("Victory! Total coins", str(total)+".")
-                play = input("PLay again (y/n): ")
+                play = input("Play again (y/n): ")
                 if play == "y" or play == "Y":
                     pass
                 else:
-                    break
+                    return
             else:
                 valid_directions, total = find_directions(total, col, row)
                 print_directions(valid_directions)
 play()
-
