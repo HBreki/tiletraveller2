@@ -1,6 +1,3 @@
-#comment
-#comment
-
 #Constants
 NORTH = 'n'
 EAST = 'e'
@@ -101,4 +98,21 @@ while not victory:
     else:
         valid_directions, total = find_directions(total, col, row)
         print_directions(valid_directions)
+
+def restart(total, row, col):
+    victory = False
+    total = 0
+    row = 1
+    col = 1  
+    return total, row, col
+
+
+def again():
+    question = input("Play again (y/n): ").lower()
+    if question == "y":
+        restart(total, row, col)
+
+#after victory
+again()
+
 
